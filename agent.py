@@ -13,14 +13,14 @@ image_resized = cv2.resize(image, (1020, 600))
 cv2.imwrite("resized_1.jpg", image_resized)
 
 # Set API Keys
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCfdjIvr-Ll252Hb5ySyXHZ3bbuXZeOA4Y"
+os.environ["GOOGLE_API_KEY"] = ""
 
 # Initialize Models
 gemini_pro = Gemini(model_name="models/gemini-1.5-flash")
 
 llm = Groq(
     model="deepseek-r1-distill-llama-70b",
-    api_key="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"
+    api_key=""
 )
 
 # Step 1: Send Image + Prompt to Gemini
